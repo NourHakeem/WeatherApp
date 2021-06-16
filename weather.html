@@ -7,16 +7,15 @@
 
         <div class="container">
             <h1 class="pgtitle">Weather App</h1>
-            <p>Date/Time: <span id="datetime"> <script>new Date().toLocaleString(); </script></span></p>
-            <!-- <div>
+            <div>
+                <h1 id="datevar"></h1>
                 <h1 id="temperature"></h1>
                 <h2 id="description"></h2>
                 <p id="location"></p>
-                <script type="text/javascript" src="weather.js"></script>
+                <p>
+                    <script type="text/javascript" src="curWeather.js"></script>
+                </p>
             </div>
-
- -->
-
             <form>
                 <input type="text" placeholder="Search Location" autofocus>
                 <button class="btn-grad" type="onsubmit">Search</button>
@@ -30,7 +29,6 @@
 
 
             </ul>
-
         </div>
     </section>
     <script type="text/javascript" src="weather.js"></script>
