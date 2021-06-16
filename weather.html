@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <section class="top-banner">
+
+        <div class="container">
+            <h1 class="pgtitle">Weather App</h1>
+            <p>Date/Time: <span id="datetime"> <script>new Date().toLocaleString(); </script></span></p>
+            <!-- <div>
+                <h1 id="temperature"></h1>
+                <h2 id="description"></h2>
+                <p id="location"></p>
+                <script type="text/javascript" src="weather.js"></script>
+            </div>
+
+ -->
+
+            <form>
+                <input type="text" placeholder="Search Location" autofocus>
+                <button class="btn-grad" type="onsubmit">Search</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities">
+
+
+            </ul>
+
+        </div>
+    </section>
+    <script type="text/javascript" src="weather.js"></script>
+</body>
+<footer class="page-footer">
+    <div class="container">
+        <small>Made with <span>❤</span> by Nourhan Mohamed
+    </small>
+    </div>
+</footer>
