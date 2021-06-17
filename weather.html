@@ -7,15 +7,7 @@
 
         <div class="container">
             <h1 class="pgtitle">Weather App</h1>
-            <div>
-                <h1 id="datevar"></h1>
-                <h1 id="temperature"></h1>
-                <h2 id="description"></h2>
-                <p id="location"></p>
-                <p>
-                    <script type="text/javascript" src="curWeather.js"></script>
-                </p>
-            </div>
+
             <form>
                 <input type="text" placeholder="Search Location" autofocus>
                 <button class="btn-grad" type="onsubmit">Search</button>
@@ -23,6 +15,54 @@
             </form>
         </div>
     </section>
+    <div class="cur-city">
+        <p id="datevar"></p>
+        <h2 id="location"></h2>
+        <div class="curHeader">
+            <img id="Curcityicon" width="60" height="60">
+            <h2 id="temperature"></h2>
+        </div>
+        <div id="description">
+
+        </div>
+        <div class="curr-container">
+            <ul class="Curcitydetails">
+                <li>
+                    <div class="wind-line">
+                        <img id="windimg" src="wind.png" alt="windline" style="
+                        float: left;
+                        width: 20px;
+                        margin: 0px 9px 0px 0px;
+                    ">
+                        <span id="windspeed" style="
+                        
+                        padding-top: 25px;
+                        padding-bottom: 27px;
+                    "></span>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="humidity">
+                        <img id="humidityimg" src="humidity.png" alt="windline" style="
+                        float: left;
+                        width: 20px;
+                        margin: 0px 9px 0px 0px;
+                    ">
+                        <span id="humidityval" style="
+                        
+                        padding-top: 25px;
+                        padding-bottom: 27px;
+                    "></span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <p>
+            <script type="text/javascript" src="curWeather.js"></script>
+        </p>
+    </div>
     <section class="ajax-section">
         <div class="container">
             <ul class="cities">

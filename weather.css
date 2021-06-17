@@ -30,9 +30,36 @@ input {
     color: inherit;
 }
 
+#datevar {
+    color: #ffb100;
+}
+
+#description {
+    width: auto;
+    margin: 21px 5px 5px -10px;
+    padding: 9px;
+}
+
+.Curcitydetails li div {
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.Curcitydetails li {
+    display: table-cell;
+}
+
+.Curcitydetails {
+    border-left: 3px solid;
+    border-left-color: #ff8c00;
+}
+
 img {
     display: block;
-    max-width: 100%;
+    max-width: 230px;
+    max-height: 70px;
+    width: auto;
     height: auto;
 }
 
@@ -54,11 +81,12 @@ body {
 
 .top-banner {
     color: var(--text_light);
+    padding: 0px 0px 23px 0px;
 }
 
 .pgtitle {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: 0.02em;
     padding: 0 0 30px 0;
 }
@@ -70,9 +98,9 @@ body {
 }
 
 .top-banner form input {
-    font-size: 2rem;
+    font-size: 1rem;
     height: 40px;
-    padding: 5px 5px 10px;
+    padding: 11px 165px 3px 10px;
     border-bottom: 1px solid;
 }
 
@@ -81,9 +109,9 @@ body {
 }
 
 .top-banner form button {
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin: 10px;
-    padding: 15px 45px;
+    padding: 15px 20px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -208,6 +236,27 @@ body {
     margin-top: 10px;
     width: 100px;
     height: 100px;
+}
+
+.curHeader {
+    margin: -17px -2px 0px -15px;
+    padding: 4px 7px 15px 1px;
+}
+
+.curHeader img {
+    float: left;
+    width: 60 px;
+    height: 60 px;
+}
+
+.curHeader h2 {
+    position: relative;
+    top: 23px;
+    left: 10px;
+}
+
+.cur-city h2 {
+    width: 50 px;
 }
 
 
