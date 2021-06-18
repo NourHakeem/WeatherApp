@@ -18,7 +18,6 @@ window.onload = function getWeather() {
         longitude = position.coords.longitude;
 
 
-
         let urlw =
             api +
             "?lat=" +
@@ -36,6 +35,10 @@ window.onload = function getWeather() {
                 const icon = `https://openweathermap.org/img/wn/${
        data.weather[0]["icon"]}@2x.png`;
                 let temp = data.main.temp;
+                document.getElementById("windimg").style.visibility = "visible";
+                document.getElementById("humidityimg").style.visibility = "visible";
+                document.getElementById("ulcurruntcity").style.visibility = "visible";
+
                 temperature.innerHTML = Math.round(temp) + "° C";
                 console.log(data.dt)
                 datevar.innerHTML = new Date(data.dt * 1000).toLocaleString();
@@ -44,7 +47,8 @@ window.onload = function getWeather() {
                 description.innerHTML = "Feels like " + Math.round(data.main.feels_like) + "° C, " + data.weather[0].description;
                 Curcityicon.src = icon;
                 Curcityicon.alt = data.weather[0].main;
-                windspeed.innerHTML = data.wind.speed + "m/s SSE"
+                windspeed.innerHTML = data.wind.speed + "m/s"
+
                 humidityval.innerHTML = data.main.humidity + " %"
             });
     }

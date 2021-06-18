@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <link rel="stylesheet" href="weather.css">
 </head>
@@ -26,13 +28,14 @@
 
         </div>
         <div class="curr-container">
-            <ul class="Curcitydetails">
+            <ul class="Curcitydetails" id="ulcurruntcity" style="visibility: hidden;">
                 <li>
                     <div class="wind-line">
                         <img id="windimg" src="wind.png" alt="windline" style="
                         float: left;
                         width: 20px;
                         margin: 0px 9px 0px 0px;
+                        visibility: hidden;
                     ">
                         <span id="windspeed" style="
                         
@@ -48,6 +51,7 @@
                         float: left;
                         width: 20px;
                         margin: 0px 9px 0px 0px;
+                        visibility: hidden;
                     ">
                         <span id="humidityval" style="
                         
@@ -63,6 +67,7 @@
             <script type="text/javascript" src="curWeather.js"></script>
         </p>
     </div>
+
     <section class="ajax-section">
         <div class="container">
             <ul class="cities">
@@ -79,3 +84,5 @@
     </small>
     </div>
 </footer>
+
+</html>
